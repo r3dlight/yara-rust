@@ -22,6 +22,8 @@ fn main() {
     {
         println!("cargo:rustc-link-search=/usr/lib/x86_64-linux-gnu/");
         println!("cargo:rustc-link-search=/usr/local/lib");
+        println!("cargo:rustc-link-search=/usr/include/");
+        println!("cargo:rustc-link-search=/usr/include/yara/");
     }
     
     println!("cargo:rustc-link-lib=static=crypto");
